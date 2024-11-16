@@ -1,0 +1,32 @@
+[Bb]in/
+[Oo]bj/
+packages/
+artifacts/
+node_modules/
+.vs/
+_ReSharper.*
+.idea/
+
+*.userprefs
+*DS_Store
+*.sln.ide
+
+*.suo
+*.user
+*.vssscc
+*.orig
+*.dbmdl
+*.jfm
+
+# nCrunch local files and folders
+_NCrunch_*/
+*.ncrunchproject
+*.ncrunchsolution
+
+# ignore bego action
+.github/actions
+
+# ignore coverlet
+tests/**/TestResults/
+coverage/
+coveragereport/
