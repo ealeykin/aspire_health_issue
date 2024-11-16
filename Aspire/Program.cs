@@ -1,11 +1,5 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-// var db = builder
-//     .AddSqlServer("sql-server")
-//     .AddDatabase("db")
-//     //.WithHealthCheck("Postgres")
-//     ;
-
 var db = builder.AddPostgres("postgres");
 
 var host1 = builder
@@ -19,4 +13,4 @@ var host2 = builder
     .WaitFor(db)
     .WaitForCompletion(host1);
 
-builder.Build().Run();
+await builder.Build().RunAsync();
