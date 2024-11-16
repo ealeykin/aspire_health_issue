@@ -2,7 +2,7 @@ using Xunit.Abstractions;
 
 namespace Aspire.Tests;
 
-public class TempTests
+public class Tests
 {
     [Fact]
     public async Task Test1()
